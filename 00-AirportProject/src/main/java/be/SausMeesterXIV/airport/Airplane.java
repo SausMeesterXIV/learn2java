@@ -12,9 +12,18 @@ public class Airplane{
         this.maxRange = maxRange;
     }
 
+    public Tank(double litersFuel){
+
+    }
+
+    public double getFuelLevel(){
+        return fuelLevel;
+    }
+
+
     @Override
     public String toString(){
-        return String.format("Airplane[model: %s, fuel %.2f, %d]", model, fuelLevel, maxRange);
+        return String.format("Airplane[model: %s, fuel: %.2f, max range: %d]", model, fuelLevel, maxRange);
     }
 }
 
