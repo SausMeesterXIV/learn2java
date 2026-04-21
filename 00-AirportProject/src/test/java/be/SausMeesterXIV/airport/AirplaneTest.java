@@ -22,7 +22,6 @@ public class AirplaneTest {
     @Test
     void tank_shouldIncreaseFuelLevel(){
         Airplane airplane = new Airplane("Eurofighter", 50.0, 1500);
-
         airplane.tank(100.0);
 
         assertEquals(150.0, airplane.getFuelLevel());
