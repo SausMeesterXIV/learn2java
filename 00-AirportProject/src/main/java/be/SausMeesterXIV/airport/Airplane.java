@@ -2,19 +2,19 @@ package be.SausMeesterXIV.airport;
 
 public class Airplane{
     private final String model;
-    private final double fuelLevel;
-    private final int maxCapacity;
+    private  double fuelLevel;
+    private int maxRange;
     //Attributes (type, fuelLevel, maxCapacity)
 
-    public Airplane(String type, double fuelLevel, int maxCapacity){
-        this.model = type;
+    public Airplane(String model, double fuelLevel, int maxRange){
+        this.model = model;
         this.fuelLevel = fuelLevel;
-        this.maxCapacity = maxCapacity;
+        this.maxRange = maxRange;
     }
 
     @Override
     public String toString(){
-        return String.format("Airplane[model: %s, fuel %.2f, %d]", model, fuelLevel, maxCapacity);
+        return String.format("Airplane[model: %s, fuel %.2f, %d]", model, fuelLevel, maxRange);
     }
 }
 
